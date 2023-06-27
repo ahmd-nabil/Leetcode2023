@@ -1,3 +1,5 @@
+package Strings;
+
 /**
  * @author Ahmed Nabil
  */
