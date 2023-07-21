@@ -9,9 +9,9 @@ import java.util.Map;
 public class _3_LongestSubstringWithoutRepeatingCharacters {
     public int lengthOfLongestSubstring(String s) {
         int start = 0, ans = 0, n = s.length();
-        Map<Character, Integer> lastOccurence = new HashMap<>();
+        Map<Character, Integer> lastOccurrence = new HashMap<>();
         for(int end = 0; end < n; end++) {
-            Integer last = lastOccurence.put(s.charAt(end), end);
+            Integer last = lastOccurrence.put(s.charAt(end), end);
             if(last != null) {
                 start = Math.max(start, last+1);
             }
